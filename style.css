@@ -1,8 +1,3 @@
-@font-face {
-    font-family: buttermilk;
-    src: url(./Buttermilk.woff2);
-}
-
 /* General reset */
 * {
     margin: 0;
@@ -10,24 +5,27 @@
     box-sizing: border-box;
 }
 
+/* Import Buttermilk font */
+@font-face {
+    font-family: 'Buttermilk';
+    src: url('./Buttermilk.woff2');
+}
+
 /* Body styling */
 body {
-    font-family: 'buttermilk';
-    background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
-   
-    background-image: url(./bg.webp);
+    font-family: 'Buttermilk';
+    background-image: url('./bg.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    
-    
+    color: #333;
+    margin: 0;
+    padding: 0;
 }
 
 /* Header styling */
 header {
-    background-color: #ff0000;
+    background-color: rgba(255, 0, 0, 0.8); /* Semi-transparent red */
     color: #fff;
     padding: 10px 0;
     text-align: center;
@@ -41,7 +39,7 @@ header {
 
 /* Heading styling */
 h1, h2 {
-    color: #333;
+    color: #fff;
 }
 
 /* Video section layout */
